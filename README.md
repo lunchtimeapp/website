@@ -1,3 +1,5 @@
+![CI](https://github.com/lunchtimeapp/website/workflows/CI/badge.svg?branch=master)
+
 # lunchtimeapp.com Website
 
 ## Development
