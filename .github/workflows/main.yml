@@ -44,3 +44,23 @@ jobs:
       # Runs a single command using the runners shell
     - name: Build website
       run: npm run build
+
+    - name: Deploy to Azure static website
+      uses: tibor19/static-website-deploy@v1
+      with:
+        # Connection String of the Azure Storage Container
+        connection-string: ${{ secrets.AzureBlobStorageConnectionString }}
+#         # Folder containing the files to be uploaded to the Storage Container
+#         folder: # optional, default is .
+#         # Name of the Blob Container Storage
+#         blob-container-name: # optional
+#         # Access Policy to update in the Container (BlobContainer | Blob | None). For private containers do not specity any value.
+#         public-access-policy: # optional
+#         # Enabled static website
+#         enabled-static-website: # optional
+#         # Index file for the static website
+#         index-file: # optional
+#         # 404 Error file for the static website
+#         error-file: # optional
+#         # If the existing files should be removed before uploading the new files
+#         remove-existing-files: # optional
