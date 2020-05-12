@@ -52,8 +52,8 @@ jobs:
         connection-string: ${{ secrets.AzureBlobStorageConnectionString }}
 #         # Folder containing the files to be uploaded to the Storage Container
 #         folder: # optional, default is .
-#         # Name of the Blob Container Storage
-#         blob-container-name: # optional
+        # Name of the Blob Container Storage
+        blob-container-name: $web # optional
 #         # Access Policy to update in the Container (BlobContainer | Blob | None). For private containers do not specity any value.
 #         public-access-policy: # optional
 #         # Enabled static website
