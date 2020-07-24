@@ -1,6 +1,7 @@
 {
   "name": "api",
   "version": "1.0.0",
+  "private": true,
   "description": "",
   "scripts": {
     "build": "tsc",
@@ -9,9 +10,13 @@
     "start": "func start",
     "test": "echo \"No tests yet...\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "jwks-rsa": "^1.8.1"
+  },
   "devDependencies": {
     "@azure/functions": "^1.0.2-beta2",
+    "@types/jsonwebtoken": "^8.5.0",
     "typescript": "^3.9.7"
   }
 }
