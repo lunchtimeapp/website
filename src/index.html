@@ -12,6 +12,12 @@
     <p><a href="app/">Go to app</a></p>
     <hr>
     <p><a href="privacy.html">Privacy Policy</a></p>
+    <script>
+      if (process.env.NODE_ENV === 'development') {
+        // Parcel's development server requires suffixing entry files if there are multiple.
+        document.querySelector('a[href="app/"]').setAttribute('href', 'app/index.html');
+      }
+    </script>
 </body>
 
 </html>

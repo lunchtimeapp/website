@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "rimraf dist",
-    "start": "parcel src/index.html src/app/index.html",
+    "start": "parcel src/index.html src/app/index.html --cert localhost.pem --key localhost-key.pem",
     "prebuild": "rimraf dist",
     "build": "parcel build src/index.html src/app/index.html",
     "clean": "rimraf dist .cache",
