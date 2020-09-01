@@ -6,14 +6,18 @@
   "description": "Website for lunchtimeapp.com",
   "main": "index.js",
   "scripts": {
+    "postinstall": "sed -i.bak 's_\"//# sourceMappingURL=\"_\"//# source\"+\"MappingURL=\"_' node_modules/@auth0/auth0-spa-js/dist/*.js",
     "prestart": "rimraf dist",
     "start": "parcel src/index.html src/app/index.html --cert localhost.pem --key localhost-key.pem",
     "prebuild": "rimraf dist",
-    "build": "parcel build src/index.html src/app/index.html",
+    "build": "parcel build --experimental-scope-hoisting src/index.html src/app/index.html",
     "clean": "rimraf dist .cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@auth0/auth0-spa-js": "^1.11.0",
+    "aws-amplify": "^3.0.24"
+  },
   "devDependencies": {
     "babel-preset-preact": "^2.0.0",
     "parcel-bundler": "^1.12.4",

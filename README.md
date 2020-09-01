@@ -20,6 +20,11 @@
   - `npm install`
 - mkcert – https://mkcert.dev
   - `mkcert -install localhost` – generates a certificate for localhost for use with the development server.
+- Environment variables (.env files supported)
+  - `AWS_COGNITO_REGION` (e.g. 'us-west-2')
+  - `AWS_USER_POOLS_ID` (e.g. 'us-west-2_212378SHs')
+  - `AWS_USER_POOLS_WEB_CLIENT_ID` (e.g. 'asdhj21837hasd12uioqjwd')
+  - `AWS_USER_POOLS_OAUTH_DOMAIN` (e.g. 'myuserpool.auth.us-west-2.amazoncognito.com')
 
 ### Start
 
