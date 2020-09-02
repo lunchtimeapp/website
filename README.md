@@ -20,10 +20,10 @@
 - mkcert – https://mkcert.dev
   - `mkcert -install localhost` – Generates a certificate for localhost for use with the development server
 - Environment variables (.env files supported)
-  - `AWS_COGNITO_REGION` (e.g. 'us-west-2')
-  - `AWS_USER_POOLS_ID` (e.g. 'us-west-2_212378SHs')
-  - `AWS_USER_POOLS_WEB_CLIENT_ID` (e.g. 'asdhj21837hasd12uioqjwd')
-  - `AWS_USER_POOLS_OAUTH_DOMAIN` (e.g. 'myuserpool.auth.us-west-2.amazoncognito.com')
+  - `PREACT_APP_AWS_COGNITO_REGION` (e.g. 'us-west-2')
+  - `PREACT_APP_AWS_USER_POOLS_ID` (e.g. 'us-west-2_212378SHs')
+  - `PREACT_APP_AWS_USER_POOLS_WEB_CLIENT_ID` (e.g. 'asdhj21837hasd12uioqjwd')
+  - `PREACT_APP_AWS_USER_POOLS_OAUTH_DOMAIN` (e.g. 'myuserpool.auth.us-west-2.amazoncognito.com')
 
 ## CLI Commands
 
